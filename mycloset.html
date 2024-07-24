@@ -1,0 +1,154 @@
+<!DOCTYPE HTML>
+<!--
+	Strongly Typed by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Abigail Kotar</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="homepage is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<section id="header">
+					<div class="container">
+
+						<!-- Logo -->
+							<h1 id="logo"><a href="index.html">Abigail Kotar</a></h1>
+							<p>Software. Data. Design. </p>
+
+						<!-- Nav -->
+							<nav id="nav">
+								<ul>
+									<li><a class="icon solid fa-home" href="index.html"><span>About Me</span></a></li>
+									<li><a class="icon solid fa-cog" href="resume.html"><span>Resume</span></a></li>
+									<li>
+										<a href="experience.html" class="icon fa-cog"><span>Experience</span></a>
+									</li>
+									<li>
+										<a href="projects.html" class="icon fa-chart-bar"><span>Projects</span></a>
+										<ul>
+											<li><a href="#">Topic Modeling and Sentiment Analysis</a></li>
+											<li><a href="happinesscont.html">Happiness by Continent</a></li>
+											<li><a href="mmm.html">Magic Murder Mystery</a></li>
+											<li><a href="#">My Closet</a></li>
+											<li><a href="#">Improved Yorkshare VLE</a></li>
+											<li><a href="#">InTracktion</a></li>
+										</ul>
+									</li>
+								</ul>
+							</nav>
+
+					</div>
+				</section>
+
+			
+			<!-- Features -->
+				<section id="features">
+					<div class="container">
+						<header>
+							<h2>My Closet: Web Development</h2>
+						</header>
+						<p>For my web development course at University of York, we were tasked with creating an interactive website using HTML, CSS, and Javascript. I created "My Closet," a fashionista's heaven.</p>
+                        <p>The user can take the style quiz, which recommends user's new items to add to their closets. Then, the user can upload pictures of their own clothing items to style and save outfits! Outfits and uploaded images are saved using JSON and local storage.</p>
+
+                        <h3>Demo </h3>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/_AmFbxd9A8M?si=3xSyd42mvPW8Twoy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            
+                
+                        <h3>Inspiration</h3>
+                        <img src="images/stylebook-cover.jpg" alt="phone screen of interactive closet app, Stylebook" 
+                            width="300">
+                        <img src="images/polyvore.jpeg" alt="styled emo outfit from Polyvore"
+                             width="300">
+                        <p>Based on other apps, like Stylebook or Polyvore, I wanted to create a website that acted like an extension of ones closet. Additionally, I wanted to recommend user's different pieces that might suit their style. I added the style quiz on the inital page of the website to engage users and also recommend them clothes based on their style. </p>
+
+                        <h3>Inital Sketch</h3>
+                        <p>I created my inital sketch by simply drawing it out on my iPad. At this point, I had wanted a login screen and to save user's names.</p>
+                        <img src="images/ADD assessment 2 design.pdf" alt="hand drawn sketch of multiple screens with descriptions"
+                         width="500">
+
+                        <p>However, I did some brief research and realized many users might be barred from using a website with a login page, or one that seems to take their information for no reason. Therefore, I decided to only save the results of their style quiz, as these resutls did not need to be associated with a profile.</p>
+
+                        <h3>Implementation</h3>
+                        <img src="images/style_quiz.png" alt="screenshot of google chrome tab displaying my Closet style quiz which contains multiple images of different styles of clothing items"
+                            width="1000">
+                        <p>I ultimately wanted to website to look clean and simple, with the clothing items themselves being able to shine. I decided to go with more style styling, adding the white background with black lines to create cohesive boxes. </p>
+                        <p>I used brown text to add a little color, but still keep it neutral. In the style quiz itself, I wanted the images to be somewhat even and for each question to be grouped. This is why I added the black line.</p>
+
+                        <img src="images/style_result.png" alt="screenshot of google chrome tab displayed the result of the style quiz being ballet. There are images of different white and pink clothing."
+                            width="1000">
+                        <p>I wanted each style to have a different color title that aligned with the style, but I wanted to ensure the colors matched the WCAG guidelines. While I wanted ballet core to be written in a light pink, this does not have enough contrast. </p>
+                        <p>I also included three style inspiration pictures and some good colors for users to better understand their style. </p>
+
+                        <img src="images/items_in.png" alt="screenshot of google chrome tab displayed with three uploaded outfit pictures"
+                            width="1000">
+            
+                    <p>My closet suggests a few different clothing items based on the style result from the quiz. This is saved through JSON and saving the data locally. The user can also upload their own images, which are also saved through local storage using JSON.</p>
+                    <img src="images/curr_outfit.png" alt="screenshot of google chrome tab displaying a white top and jeans with a crocheted white cardigan as the current outfit"
+                        width="1000">
+                    <p>Using the clothes uploaded to the closet, the user can create different outfits by clicking on the clothing pieces. The user can scrap the outfit, returning all clothes back to the closet, or save the outfit. </p>
+                    <img src="images/saved_outfit.png" alt="screenshot of google chrome tab displaying three different outfits in the closet with no outfit currently made"
+                     width="1000">
+
+                    <p>If the user saves the outfit, the outfit will appear in the side tab for saved outfits. If the user creates too many looks, they can clear the saved outfits and restart. </p>
+                    <p>Overall, the website acts as style tool for users, as they can figure out their current style, create outfits based on whats in their closet, or find new pieces that might work in their closet.</p>
+
+                    <h3>Read the Full Report Below</h3>
+                    <object 
+                        type="application/pdf"
+                        data="/images/2022-23_TFT000341-Y3923886-4_4_2023.pdf"
+                        width="1000"
+                        height="1200"
+                    ></object>
+                    </div>
+                </section>
+		
+			<!-- Footer -->
+				<section id="footer">
+					<div class="container">
+						<header>
+							<h2>Questions or comments? <strong>Get in touch:</strong></h2>
+						</header>
+							
+						<div class="row">
+							<div class="col-6 col-12-large">
+								<ul class="icons">
+									<li class="icon solid fa-envelope">
+										<a href="mailto:abbyrosekotar@gmail.com">abbyrosekotar@gmail.com</a>
+									</li>
+								</ul>
+							</div>
+							<div class="col-6 col-12-large">
+								<ul class="icons">
+									<li class="icon brands fa-linkedin">
+										<a href="https://www.linkedin.com/in/abigail-kotar/">linkedin.com/in/abigail-kotar/</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div id="copyright" class="container">
+						<ul class="links">
+							<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</div>
+				</section>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
