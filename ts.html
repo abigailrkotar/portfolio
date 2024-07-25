@@ -47,24 +47,144 @@
 					</div>
 				</section>
 
-			
-			<!-- Features -->
-				<section id="features">
-					<div class="container">
-						<header>
-							<h2>Highlights</h2>
-						</header>
-						
-					</div>
-				</section>
-
-			<!-- Banner -->
-			<section id="banner">
+		
+			<!-- Main -->
+			<section id="main">
 				<div class="container">
-					<p>Recent graduate with <b>passion</b> for design, data, and software. </p>
+					<div class="row">
+
+						<!-- Content -->
+							<div id="content" class="col-8 col-12-medium">
+
+								<!-- Post -->
+									<article class="box post">
+										<header>
+											<h2>Using Topic Modeling and Sentiment Analysis to Analyze Taylor Swift's Lyrical Progression</h2>
+										</header>
+										<figure>
+											<span class="image featured"><img src="images/swiftchart.jpeg" alt="" /></span>
+											<figcaption>Graph from <a href="https://x.com/Ammarlovereto13/status/1784692221498814934">Twitter</a></figcaption>
+										</figure>
+										
+										<h3>Abstract</h3>
+										<p>Over the trajectory of her career, Taylor Swift
+											has taken the world by storm. Using this
+											Swift’s lyrics to compute a sentiment analysis with TextBlob, VADER, and Flair as well as
+											topic modeling using Latent Dirichlet Allocation, this project will explore how her musical
+											themes changed in relation to her success as an
+											artist. As a whole, Swift’s music shifts away
+											from romantic relationships to more complex
+											themes.</p>
+										<h3>Sentiment Analysis</h3>
+										<p>Overall, sentiment analysis was not going to capture the nuance and artistic quality of lyrics. TextBlob is a lexicon based tool, which assigns
+											each word a value between -1 and 1, -1 being the most negative and 1 being the most positive. This will not get any nuance, as seen by the graph. 
+											It ranked all albums somewhat positive, but surprisingly 1989 was the lowest. </p>
+										<p>VADER uses a lexicon and rule based approach, where a rule based approach assings different tags to words. VADER is trained on social media data, which also 
+											does not truly capture the essence of Swift's lyrics. VADER also ranks 1989 the "saddest" album. Both TextBlob and VADER do not seem to capture how humans 
+											would rank Swift's albums due to the limits of a lexicon based approach. 
+										</p>
+										<p>
+											Lastly, Flair uses a deep-learning approach to try and capture more context when determining sentiment. As seen in the graph, it shows a more negative descent thorughout
+											Swift's music. This is more accurate based on a human impression. evermore and Midnights are the most negative, which from a human perspective is the most accurate. 
+											Therefore, Flair's sentiment analysis seems to be the most accurate. 
+										</p>
+										<h3>Topic Modeling</h3>
+										<p>I choose latent direchlet allocation for topic modeling, as it is available in the gensim library in Python.
+											For topic modeling, LDA lets the user choose
+											the number of categories. After a few trial runs
+											with between 2 and 7 categories, 4 categories seem
+											to lead to the lowest perplexity scores and the best
+											human comprehension. I removed all filler words like "the," "and," etc. from the data set in order
+											to make the categories the most comprehensisable.
+										</p>
+										<p>Overall, the topic modeling by album did showcase a shift in Swift's lyrics over time. Her themes became more complex and less simple.
+											In her inital albums, they showcased clear cut categories with young love or breakup. However, in her more recent albums Swift's categories
+											became more complex with themes like darker love, painful love, growing up, and a senusal love. These themes evolved as Swift grew up and shifted genres.
+
+										</p>
+									</article>
+
+							</div>
+
+						<!-- Sidebar -->
+							<div id="sidebar" class="col-4 col-12-medium">
+
+								<!-- Excerpts -->
+									<section>
+										<ul class="divided">
+											<li>
+
+												<!-- Excerpt -->
+													<article class="box excerpt">
+														<header>
+															<h3>Highlights</h3>
+														</header>
+														<p>Used <b>Flair</b>, VADER, and TextBlob in Python to complete sentiment analysis for lyrics by album.</p>
+														<p>Cleaned data set from Kaggle by removing "Taylor's Version" albums, non-lyrics, songs not from albums, and punctionation. </p>
+														<p>Computed <b>latent Dirichlet allocation</b> from Python's gensim library to get 4 topics per album.</p>
+													</article>
+
+											</li>
+											<li>
+
+												<!-- Excerpt -->
+													<article class="box excerpt">
+														<header>
+															<h3>Data Visualizations</h3>
+														</header>
+														<figure>
+															<a class="image left"><img src="images/flair_analysis.png" alt="" /></a>
+															<figcaption>Line Graph showing Polarity by Album using Flair, a deep learning sentiment analysis tool.</figcaption>
+														</figure>
+														<figure>
+															<a class="image left"><img src="images/vader_sentiment.png" alt="" /></a>
+															<figcaption>Line Graph showing Polarity by Album using VADER, a lexicon and ruled based sentiment analysis tool.</figcaption>
+														</figure>
+														<figure>
+															<a class="image left"><img src="images/textblob_ts.png" alt="" /></a>
+															<figcaption>Line Graph showing Polarity by album using TextBlob, a lexicon based sentiment analysis tool</figcaption>
+														</figure>
+														
+													</article>
+
+											</li>
+										</ul>
+									</section>
+
+								<!-- Highlights -->
+									<section>
+										<ul class="divided">
+											<li>
+
+												<!-- Highlight -->
+													<article class="box highlight">
+														<header>
+															<h3>Topic Modeling Example</h3>
+														</header>
+														<a class="image left"><img src="images/rep_topic.png" alt="" /></a>
+														<p>This shows an exmaple of what LDA produces with 4 categories. It does not supply 
+															the user with categories so humans have to decide if the categories make sense.
+														</p>
+													</article>
+
+											</li>
+						
+										</ul>
+									</section>
+
+							</div>
+							<section>
+								<div class="container">
+									<h3>Read the full report below!</h3>
+									<embed src="assets/Kotar- Comp Ling final paper 5:2.pdf" width="100%" height="1000"
+														 type="application/pdf">
+								</div>
+							</section>
+					</div>
 				</div>
 			</section>
-
+		
+			
 		
 			<!-- Footer -->
 				<section id="footer">
